@@ -3,7 +3,7 @@ package fsm
 import (
 	"testing"
 
-	"github.com/dc0d/club/errors"
+	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
 
