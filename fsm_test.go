@@ -47,13 +47,11 @@ func Test01(t *testing.T) {
 
 	fsm := &sample{}
 	err := Activate(fsm.Start())
-
 	assert.Equal(9, fsm.state)
 	assert.Equal(nil, err)
 
 	fsm.state = -10
 	err = Activate(fsm.Start())
-
 	assert.Equal(-10, fsm.state)
 	assert.Equal(errNegative, err)
 }
